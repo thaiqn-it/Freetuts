@@ -1,0 +1,41 @@
+<h2><strong>Ví dụ 1: Cộng hai số trong Java</strong></h2><p>Trong ví dụ này ta chỉ cộng hai số đã được gán sẵn giá trị, thực hiện phép tính cộng và hiển thị ra màn hình.</p><pre><code class="language-java">public class CongHaiSo{
+
+ &nbsp; public static void main(String[] args) {
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+
+ &nbsp;&nbsp;&nbsp;&nbsp; int num1 = 5, num2 = 15, sum;
+
+ &nbsp;&nbsp;&nbsp;&nbsp; sum = num1 + num2;
+
+ &nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Tổng của hai số là: "+sum);
+
+ &nbsp; }
+
+}</code></pre><p><strong>Kêt quả</strong>:</p><figure class="image"><img src="https://freetuts.net/upload/tut_post/images/2020/04/25/2556/cong-hai-so-java.JPG" alt="cong hai so java JPG"></figure><h2><strong>Ví dụ 2: Cộng hai số sử dụng Scanner</strong></h2><p><strong>* Lưu ý</strong>: Để sử dụng được Scanner thì trước tiên ta phải import nó vào đã nhé, bằng cách sử dụng câu lệnh <i><strong>import java.util.Scanner</strong></i>.</p><p>Scanner cho phép chúng ta nắm bắt đầu vào của người dùng để chúng ta có thể nhận được các giá trị của cả hai số từ người dùng. Chương trình sau đó sẽ thực hiện tính tổng và hiển thị nó.</p><pre><code class="language-java">import java.util.Scanner;
+
+public class CongHaiSo {
+
+ &nbsp;&nbsp; public static void main(String[] args) {
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int num1, num2, sum;
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scanner sc = new Scanner(System.in);
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Nhập vào số thứ nhất: ");
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; num1 = sc.nextInt();
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Nhập vào số thứ hai: ");
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; num2 = sc.nextInt();
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sc.close();
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sum = num1 + num2;
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Tổng của hai số vừa nhập là: "+sum);
+
+ &nbsp;&nbsp; }
+
+}</code></pre><p><strong>Kết quả</strong>:</p><figure class="image"><img src="https://freetuts.net/upload/tut_post/images/2020/04/25/2556/cong-hai-so-java-scanner.JPG" alt="cong hai so java scanner JPG"></figure><p>Như vậy chúng ta vừa thực hiện xong hai chương trình tính tổng hai số bằng hai cách khác nhau đó là tính tổng của hai số đã được gán sẵn giá trị và hai số được nhập từ người dùng.</p>

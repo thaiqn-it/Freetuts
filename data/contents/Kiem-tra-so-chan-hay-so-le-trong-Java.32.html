@@ -1,0 +1,51 @@
+<p>panel:159</p><h2><strong>Ví dụ 1: Kiểm tra số chẵn hay số lẻ trong java</strong></h2><p>Đây là ví dụ kiểm tra chẵn lẻ của 1 số được gán sẵn giá trị.</p><pre><code class="language-java">public class KiemTraSoChanLe {
+
+ &nbsp;&nbsp; public static void main(String[] args) {
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int n = 10;
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(n%2==0)
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Đây là số chẵn!");
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("Đây là số lẻ!");
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+ &nbsp;&nbsp; }
+
+}</code></pre><p>Với chương trình trên kết quả sẽ trả về là số chẵn vì lúc đầu n được gán sẵn giá trị 10</p><p><strong>Kết quả:</strong></p><figure class="image"><img src="https://freetuts.net/upload/tut_post/images/2020/04/25/2557/kiem-tra-chan-le-java.JPG" alt="kiem tra chan le java JPG"></figure><h2><strong>Ví dụ 2: Kiểm tra số chẵn hay số lẻ sử dụng Scanner</strong></h2><p>Đây là ví dụ kiểm tra số chẵn hay lẻ của 1 số được nhập từ người dùng. Việc đầu tiên chúng ta cần import thư viện Scanner bằng cách sử dụng câu lệnh <i><strong>import java.util.Scanner.</strong></i></p><pre><code class="language-java">public class KiemTraSoChanLe {
+
+ &nbsp;&nbsp; public static void main(String[] args) {
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int n;
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scanner scanner = new Scanner(System.in);
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println("nhập vào số cần kiểm tra n:");
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; n = scanner.nextInt();
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // thực hiện câu lệnh if else để kiểm tra điều kiện
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (n % 2 == 0) {
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(n + " là số chẵn!");
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(n + " là số lẻ");
+
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+
+ &nbsp;&nbsp; }
+
+}</code></pre><p>Sau khi chạy chương trình máy sẽ yêu cầu chúng ta nhập vào số cần kiểm tra, sau khi nhập chương trình sẽ thực hiện kiểm tra và thông báo kết quả ra màn hình.</p><p><strong>Kết quả:</strong></p><figure class="image"><img src="https://freetuts.net/upload/tut_post/images/2020/04/25/2557/kiem-tra-chan-le-scanner.JPG" alt="kiem tra chan le scanner JPG"></figure><p>Trên đây là hai ví dụ về kiểm tra số chẵn hay lẻ theo hai cách. Mình nghĩ các bạn nên thực hiện cách thứ hai vì như vậy người dùng có thể nhập vào số mà họ muốn kiểm tra.</p>
